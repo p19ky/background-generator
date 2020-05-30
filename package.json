@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/p19ky/background-generator/issues"
   },
-  "homepage": "https://github.com/p19ky/background-generator#readme"
+  "homepage": "https://github.com/p19ky/background-generator#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }
