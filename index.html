@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super background!</title>
-  </head>
 
-  <body>
-    <h1>COOL big Feature</h1>
-    <h2>little feature</h2>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body id="gradient">
+  <h1>Background Generator</h1>
+  <br>
+  <select id="direction">
+    <option value="to left">to left</option>
+    <option value="to right">to right</option>
+    <option value="to bottom left">to bottom left</option>
+    <option value="to bottom right">to bottom right</option>
+    <option value="to bottom">to bottom</option>
+    <option value="to top">to top</option>
+    <option value="to top left">to top left</option>
+    <option value="to top right">to top right</option>
+  </select>
+  <select id="howManyColors" name="howManyColors">
+    <option value="2" selected="selected">2 Colors</option>
+    <option value="3">3 Colors</option>
+    <option value="4">4 Colors</option>
+    <option value="5">5 Colors</option>
+  </select>
+  <br><br>
+  <input class="color1" type="color" name="color1" value="#0000ff">
+  <input class="color2" type="color" name="color2" value="#800080">
+  <input class="color3" type="color" name="color3" value="#ffff00">
+  <input class="color4" type="color" name="color4" value="#00ff00">
+  <input class="color5" type="color" name="color5" value="#f25000">
+  <br><br>
+  <button id="change">Change To Selected</button>
+  <button id="randomize">Change To Random</button>
+  <br><br>
+  <h2>Current CSS Background</h2>
+  <h3 id="current">linear-gradient(to left, rgb(0, 0, 255), rgb(128, 0, 128));</h3>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script rel="text/javascript" src="script.js"></script>
+</body>
+
 </html>
